@@ -1,0 +1,125 @@
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fa;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 80px; /* space for the footer */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f7f8fa;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #e2e2e2;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+h2 {
+  text-align: center;
+  margin: 30px 0;
+  color: #258cfb;
+}
+
+div {
+  margin-bottom: 10px; /* reduced margin */
+}
+
+form {
+  max-width: 400px; /* Limiting the width of the form */
+  margin: 0 auto; /* Centering the form on the page */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"], input[type="number"], input[type="password"] {
+  width: 100%;
+  padding: 8px; /* reduced padding */
+  border: 1px solid #258cfb;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #258cfb;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #0066ad;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+  border: 1px solid #e2e2e2;
+}
+
+th, td {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #258cfb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0066ad;
+}
+
+/* Return button styles */
+.btn-return {
+  display: block; /* Makes it occupy the full width */
+  background-color: #f7f8fa;
+  color: #258cfb;
+  padding: 10px 15px;
+  border: 1px solid #258cfb;
+  border-radius: 5px;
+  text-align: center; /* Center align the text */
+  margin-top: 15px; /* Some space from the 'Save' button */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-return:hover {
+  background-color: #258cfb;
+  color: white;
+}

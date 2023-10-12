@@ -1,0 +1,38 @@
+﻿@model IEnumerable<LibraryWebApp.Models.Http.BookResponse>
+
+@{
+    ViewData["Title"] = "Books";
+}
+
+<h2>Books</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Publication Year</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var book in Model)
+    {
+        <tr>
+            <td>@book.Title</td>
+            <td>@book.Author</td>
+            <td>@book.PublicationYear</td>
+            <td>
+                <a href="@Url.Action("Edit", new { bookId = book.BookId })">Edit</a> | 
+                <a href="@Url.Action("Delete", new { bookId = book.BookId })">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Add")">Add a new book</a>
+
+@{
+    
+}
