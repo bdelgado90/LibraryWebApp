@@ -15,7 +15,7 @@ public class AuthorizationVariables
 
 public class ApiUrls
 {
-    public const string ApiBaseUrl = "http://localhost:5137/api";
+    public const string ApiBaseUrl = "https://librarywebapidemo.azurewebsites.net/api";
     public const string ApiBooksUrl = $"{ApiBaseUrl}/books";
     public const string ApiLoginUrl = $"{ApiBaseUrl}/users/login";
 }
